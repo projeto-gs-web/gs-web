@@ -41,3 +41,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Syncopate&family=Megrim&family=Rationale&display=swap');
+
+:root {
+    --dourado: #BFA181;
+    --dourado-escuro: #110D09;
+    --areia: #a77a4a;
+    --font-1: Black Ops One;
+    --font-2: Syncopate;
+    --font-3: Megrim;
+    --font-4: Rationale
+}
