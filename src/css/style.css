@@ -54,3 +54,153 @@ table {
     --font-4: Rationale
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--dourado-escuro);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(/src/assets/img/foguete.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.menu {
+    background-color: var(--dourado-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+}
+
+nav ul {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+a {
+    font-family: var(--font-3);
+    color: var(--dourado);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease-in, text-shadow 0.3s ease;
+    display: inline-block;
+}
+
+a:hover {
+    color:rgb(236, 214, 190);
+    text-shadow: 0 0 20px var(--dourado);
+    transform: scale(1.1);
+}
+
+.titulo {
+    margin-top: 10%;
+    margin-left: 3%;
+    color: var(--dourado);
+    text-shadow: 0 0 10px var(--areia);
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 5px;
+    font-family: var(--font-1);
+    font-weight: 300;
+}
+
+.subtitulo {
+    margin-top: 0;
+    color: var(--dourado);
+    text-shadow: 0 0 10px var(--dourado);
+    font-size: 20px;
+    font-family: var(--font-2);
+}
+
+h2 {
+    color: var(--dourado);
+    font-family: var(--font-3);
+    font-size: 45px;
+    text-shadow: 0 0 3px var(--areia);
+}
+
+section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    scroll-margin-top: 80px;
+}
+
+.item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section p {
+    color: var(--dourado);
+    font-family: var(--font-4);
+    line-height: 1;
+    font-size: 22px;
+    margin: 20px auto;
+    margin-top: 10px;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 200px;
+    padding: 20px;
+    background-color: var(--areia);
+}
+
+.nome {
+    margin-left: 25%;
+    font-family: var(--font-4);
+    color: var(--dourado-escuro);
+}
+
+.nome h3 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+.nome p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.rm {
+    margin-right: 25%;
+    font-family: var(--font-4);
+    color: var(--dourado-escuro);
+}
+
+.rm h3 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+.rm p {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
