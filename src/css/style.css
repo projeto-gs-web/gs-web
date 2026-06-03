@@ -49,6 +49,7 @@ table {
     --dourado: #BFA181;
     --dourado-escuro: #110D09;
     --areia: #a77a4a;
+    --bege-claro: rgb(241, 218, 194);
     --font-1: Black Ops One;
     --font-2: Syncopate;
     --font-3: Megrim;
@@ -225,7 +226,7 @@ section img {
 .caixa-texto {
     display: flex;
     flex-direction: column;
-    align-items: fex-start;
+    align-items: flex-start;
 }
 
 .texto {
