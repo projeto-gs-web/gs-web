@@ -42,6 +42,7 @@ table {
     border-spacing: 0;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Syncopate&family=Megrim&family=Rationale&display=swap');
 
 :root {
@@ -65,7 +66,7 @@ body {
 }
 
 header {
-    background-image: url(/src/assets/img/foguete.jpg);
+    background-image: url(../assets/img/foguete.jpg);
     background-size: cover;
     background-position: center;
     top: 0;
@@ -81,7 +82,7 @@ header {
 .menu {
     background-color: var(--dourado-escuro);
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     width: 100%;
     height: 70px;
@@ -92,7 +93,7 @@ nav ul {
     display: flex;
     gap: 100px;
     list-style: none;
-    padding: 0;
+    padding: 20px;
     font-size: 20px;
 }
 
@@ -142,16 +143,19 @@ h2 {
 
 section {
     display: flex;
-    text-align: center;
     flex-direction: column;
     margin-top: 60px;
     margin-bottom: 60px;
+    text-align: center;
     scroll-margin-top: 80px;
 }
 
 .item {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    text-align: left;
+    padding: 20px 40px;
+    border-radius: 25px;
+    margin-bottom: 0;
 }
 
 section p {
@@ -203,4 +207,35 @@ footer {
 .rm p {
     font-size: 15px;
     margin-bottom: 5px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+section img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.caixa-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: fex-start;
+}
+
+.texto {
+    padding: 40px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.texto p {
+    text-align: left;
+    line-height: 1.5;
+    margin: 0;
 }
