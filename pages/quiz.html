@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Syncopate&family=Megrim&family=Rationale&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
     <title>QUIZ</title>
 </head>
 <body>
-    <div class="quiz-container">
-        <div id="pergunta-container">
-            <h2 id="pergunta-texto">Carregando pergunta...</h2>
-            <div id="btn-container" class="botoes"></div>
-        </div>
 
-        <div id="resultado-container" class="result">
-            <h2 id="resultado-texto">Sua pontuação foi X/Y!</h2>
-            <button onclick="reiniciar">Jogar Novamente</button>
-        </div>
+    <div id="tela-inicio">
+        <h6>Quiz T.A.P.S</h6>
+        <p class="sub">Teste seus conhecimentos sobre o Tank Acoustic Predictive System.</p>
+
+        <input type="text" id="nome" placeholder="Digite seu nome">
+        <input type="text" id="email" placeholder="Digite seu email">
+
+        <p id="erro" class="erro oculto">Preencha o nome e o email para continuar</p>
+
+        <button class="btn1" onclick="comecarQuiz()">Iniciar quiz</button>
     </div>
-    <script src="script.js"></script>
+
+    <div id="pergunta-container" class="oculto">
+        <h2 id="pergunta-texto">Carregando pergunta...</h2>
+        <div id="btn-container" class="botoes"></div>
+    </div>
+
+    <div id="resultado-container" class="oculto">
+        <h2 id="resultado-texto">Sua pontuação foi 0/10!</h2>
+        <button onclick="reiniciar()">Jogar Novamente</button>
+    </div>
+
+    <script src="../src/js/script.js"></script>
 </body>
+</html>
