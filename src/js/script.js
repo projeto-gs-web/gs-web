@@ -101,3 +101,87 @@ const perguntas = [
     },
 ]
 
+const perguntaTexto = document.getElementById("pergunta-texto");
+const btnContainer = document.getElementById("btn-container");
+const resultadoContainer = document.getElementById("resultado-container");
+const resultadoTexto = document.getElementById("resultado-texto");
+ 
+let perguntaAtual = 0;
+let pontos = 0;
+ 
+function comecarQuiz() {
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
+    const erro = document.getElementById("erro");
+ 
+    if (nome === "" || email === "") {
+        erro.classList.remove("oculto");
+        return;
+    }
+ 
+    erro.classList.add("oculto");
+    perguntaAtual = 0;
+    pontos = 0;
+ 
+    document.getElementById("tela-inicio").classList.add("oculto");
+    document.getElementById("pergunta-container").classList.remove("oculto");
+    resultadoContainer.classList.add("oculto");
+ 
+    mostrarPergunta();
+}
+ 
+function mostrarPergunta() {
+    resetar();
+ 
+    let perguntaVista = perguntas[perguntaAtual];
+    perguntaTexto.innerText = perguntaVista.pergunta;
+ 
+    perguntaVista.respostas.forEach(resposta => {
+        const botao = document.createElement("button");
+        botao.innerText = resposta.texto;
+        botao.classList.add("botoes");
+ 
+        botao.addEventListener("click", () => {
+            selecionarResposta(resposta.correto);
+        });
+ 
+        btnContainer.appendChild(botao);
+    });
+}
+ 
+function resetar() {
+    while (btnContainer.firstChild)
+        btnContainer.removeChild(btnContainer.firstChild);
+}
+ 
+function selecionarResposta(acertou) {
+    if (acertou) {
+        pontos++;
+    }
+ 
+    perguntaAtual++;
+ 
+    if (perguntaAtual < perguntas.length) {
+        mostrarPergunta();
+    } else {
+        mostrarResultado();
+    }
+}
+ 
+function mostrarResultado() {
+    document.getElementById("pergunta-container").classList.add("oculto");
+    resultadoContainer.classList.remove("oculto");
+    resultadoTexto.innerText = `Sua pontuação foi ${pontos}/${perguntas.length}`;
+}
+ 
+function reiniciar() {
+    document.getElementById("nome").value = "";
+    document.getElementById("email").value = "";
+ 
+    perguntaAtual = 0;
+    pontos = 0;
+ 
+    document.getElementById("pergunta-container").classList.add("oculto");
+    resultadoContainer.classList.add("oculto");
+    document.getElementById("tela-inicio").classList.remove("oculto");
+}
