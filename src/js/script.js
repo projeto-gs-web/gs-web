@@ -1,3 +1,20 @@
+let imagens = [
+    "src/assets/img/slide1.png",
+    "src/assets/img/slide2.png",
+    "src/assets/img/slide3.png",
+];
+
+let index = 1;
+
+function trocarImagem(){
+    document.getElementById("banner").src = imagens[index];
+    index++;
+    if(index >= imagens.length){
+        index = 0;
+    }
+}
+
+setInterval(trocarImagem, 3000);
 
 const perguntas = [
     {
