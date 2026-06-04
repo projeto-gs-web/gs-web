@@ -135,6 +135,9 @@ function mostrarPergunta() {
  
     let perguntaVista = perguntas[perguntaAtual];
     perguntaTexto.innerText = perguntaVista.pergunta;
+
+    document.getElementById("progresso").innerText = 
+        `Pergunta ${perguntaAtual + 1} de ${perguntas.length}`;
  
     perguntaVista.respostas.forEach(resposta => {
         const botao = document.createElement("button");

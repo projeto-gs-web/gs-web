@@ -307,3 +307,152 @@ h5 {
     box-shadow: 0 0 40px var(--bege-claro);
     transform: scale(1.1);
 }
+
+#tela-inicio, #pergunta-container, #resultado-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+#tela-inicio h6 {
+    font-family: var(--font-1);
+    font-size: 50px;
+    color: var(--dourado);
+    text-shadow: 0 0 10px var(--areia);
+    margin-bottom: 10px;
+}
+
+#tela-inicio .sub {
+    font-family: var(--font-4);
+    font-size: 18px;
+    color: var(--bege-claro);
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+}
+
+#tela-inicio input {
+    width: 350px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    border: 1px solid var(--dourado);
+    border-radius: 8px;
+    color: var(--bege-claro);
+    font-family: var(--font-4);
+    font-size: 16px;
+    outline: none;
+}
+
+#tela-inicio input::placeholder {
+    color: var(--areia);
+}
+
+#tela-inicio input:focus {
+    border-color: var(--bege-claro);
+    box-shadow: 0 0 8px var(--dourado);
+}
+
+.erro {
+    font-family: var(--font-4);
+    font-size: 14px;
+    color: #e05555;
+    margin-bottom: 10px;
+}
+
+.btn1 {
+    margin-top: 10px;
+    padding: 14px 40px;
+    font-family: var(--font-1);
+    font-size: 20px;
+    background-color: var(--areia);
+    color: var(--dourado-escuro);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: var(--dourado);
+    box-shadow: 0 0 20px var(--bege-claro);
+    transform: scale(1.05);
+}
+
+#progresso {
+    font-family: var(--font-4);
+    font-size: 16px;
+    color: var(--areia);
+    margin-bottom: 20px;
+}
+
+#pergunta-texto {
+    font-family: var(--font-3);
+    font-size: 30px;
+    color: var(--dourado);
+    text-shadow: 0 0 5px var(--areia);
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+#btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#btn-container button {
+    padding: 14px 20px;
+    font-family: var(--font-4);
+    font-size: 17px;
+    background-color: transparent;
+    color: var(--bege-claro);
+    border: 1px solid var(--dourado);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+#btn-container button:hover {
+    background-color: var(--areia);
+    color: var(--dourado-escuro);
+    box-shadow: 0 0 15px var(--dourado);
+}
+
+#resultado-container h2 {
+    font-family: var(--font-1);
+    font-size: 40px;
+    color: var(--dourado);
+    text-shadow: 0 0 10px var(--areia);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#resultado-container button {
+    padding: 14px 40px;
+    font-family: var(--font-1);
+    font-size: 20px;
+    background-color: var(--areia);
+    color: var(--dourado-escuro);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#resultado-container button:hover {
+    background-color: var(--dourado);
+    box-shadow: 0 0 20px var(--bege-claro);
+    transform: scale(1.05);
+}
+
+.oculto {
+    display: none !important;
+}
