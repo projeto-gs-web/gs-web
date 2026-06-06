@@ -205,3 +205,18 @@ function reiniciar() {
     resultadoContainer.classList.add("oculto");
     document.getElementById("tela-inicio").classList.remove("oculto");
 }
+
+function trocarTema(tema) {
+    document.body.classList.remove('tema-espacial', 'tema-metalico');
+    if (tema) document.body.classList.add(tema);
+
+    document.querySelectorAll('.tema-btn').forEach(btn => btn.classList.remove('ativo'));
+    
+    const mapa = { '': 'tema-btn-dourado', 'tema-espacial': 'tema-btn-espacial', 'tema-metalico': 'tema-btn-metalico' };
+    document.querySelector('.' + mapa[tema]).classList.add('ativo');
+
+    localStorage.setItem('tema', tema);
+}
+
+const temaSalvo = localStorage.getItem('tema') || '';
+trocarTema(temaSalvo);
