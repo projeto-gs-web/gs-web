@@ -469,3 +469,41 @@ h5 {
 .oculto {
     display: none !important;
 }
+
+body.tema-espacial {
+    --dourado: #4FA3D1;
+    --dourado-escuro: #050D1A;
+    --areia: #1B6FA8;
+    --bege-claro: #A8D8F0;
+}
+
+body.tema-metalico {
+    --dourado: #C0C0C0;
+    --dourado-escuro: #1A1A1A;
+    --areia: #888888;
+    --bege-claro: #E8E8E8;
+}
+
+.tema-btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 40px;
+}
+
+.tema-btn {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tema-btn:hover { transform: scale(1.2); }
+
+.tema-btn.ativo { border-color: var(--bege-claro); }
+
+.tema-btn-dourado { background: #BFA181; }
+.tema-btn-espacial { background: #4FA3D1; }
+.tema-btn-metalico { background: #C0C0C0; }
