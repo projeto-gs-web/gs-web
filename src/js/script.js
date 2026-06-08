@@ -220,3 +220,10 @@ function trocarTema(tema) {
 
 const temaSalvo = localStorage.getItem('tema') || '';
 trocarTema(temaSalvo);
+
+const mapa = {
+    '': 'tema-btn-dourado',
+    'tema-espacial': 'tema-btn-espacial',
+    'tema-metalico': 'tema-btn-metalico',
+    'tema-verde': 'tema-btn-verde'
+};

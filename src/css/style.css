@@ -507,3 +507,12 @@ body.tema-metalico {
 .tema-btn-dourado { background: #BFA181; }
 .tema-btn-espacial { background: #4FA3D1; }
 .tema-btn-metalico { background: #C0C0C0; }
+
+body.tema-verde {
+    --dourado: #4CAF82;
+    --dourado-escuro: #071A0F;
+    --areia: #2E7D52;
+    --bege-claro: #B2F0CE;
+}
+
+.tema-btn-verde { background: #4CAF82; }
